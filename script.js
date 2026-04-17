@@ -1,14 +1,6 @@
 const byteSize = (str) => {
   // write your code here
-	let count = 0;
-	
-  for(let i=0;i<str.length;i++){
-	  if(str.charCodeAt(i) == ' '){
-		  continue;
-	  }
-	  count++;
-  }
-	return count;
+	  return new TextEncoder().encode(str).length;
 	
 };
 
